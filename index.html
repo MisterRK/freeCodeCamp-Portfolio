@@ -1,58 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-   <link rel="stylesheet" href="css/scss/styles.css">
-   <title>FCC Portfolio</title>
-</head>
-<body>
-   <!-- Nav Section Beginning -->
-   <nav id="navbar">
-      <a href="#welcome-section">About</a>
-      <a href="#skills">skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact-me">Contact</a>
-   </nav>
-   <!-- Nav Section End -->
-   <!-- Welcome Section Beginning -->
-   <section id='welcome-section'>
-         <h1>Robert Keller</h1>
-         <h2>I'm a Developer</h2>
-   </section>
-   <!-- Welcome Section End -->
-   <!-- Skills Section Beginning -->
-   <section id="skills">
-
-   </section>
-   <!-- Skills Section End -->
-   <!-- Projects Section Beginning -->
-   <section id="projects" class="container">
-      <div class="row">
-         <div class='card, project-tile'>
-            <img class="card-img-top" src="" alt="">
-            <div class="card-body">
-               <h5 class="card-title">Card Title</h5>
-               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
-               <a class="btn-btn-primary" href="">Check This Project Out</a>
-            </div>
-         </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/scss/styles.css" />
+		<title>FCC Portfolio</title>
+	</head>
+	<body>
+		<!-- Nav Section Beginning -->
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+				>&times;</a
+			>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
       </div>
-   </section>
-   <!-- Projects Section End -->
-   <!-- Contact Me Section Start -->
-   <section id="contact-me">
-      <a href="https://github.com/MisterRK">
-         <i class="fab fa-github-alt"></i>
-      </a>
-
-   </section>
-   <!-- Contact Me Section End -->
-
-   <script src="index.js"></script>
-   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-</body>
+      <div id='hamburger' onclick="openNav()">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+		<!-- Nav Section End -->
+		<!-- Welcome Section Beginning -->
+		<main id="main">
+			<section id="welcome-section">
+				<h1>Robert Keller</h1>
+				<h2>I'm a Developer</h2>
+			</section>
+			<!-- Welcome Section End -->
+			<!-- Skills Section Beginning -->
+			<section id="skills"></section>
+			<!-- Skills Section End -->
+			<!-- Projects Section Beginning -->
+			<section id="projects" class="container">
+				<div class="row">
+					<div class="card, project-tile">
+						<img class="card-img-top" src="" alt="" />
+						<div class="card-body">
+							<h5 class="card-title">Card Title</h5>
+							<p class="card-text">
+								Some quick example text to build on the card title and
+								make up the bulk of the card's content
+							</p>
+							<a class="btn-btn-primary" href=""
+								>Check This Project Out</a
+							>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Projects Section End -->
+			<!-- Contact Me Section Start -->
+			<section id="contact-me">
+				<a href="https://github.com/MisterRK"
+					><img
+						src="./assets/images/GitHub-Mark-64px.png"
+						alt="GitHub Icon"
+					/>
+					GitHub</a
+				>
+			</section>
+			<!-- Contact Me Section End -->
+		</main>
+		<!-- Script Section Beginning -->
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+			integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+			crossorigin="anonymous"
+		></script>
+		<script src="index.js"></script>
+		<!-- Runs the test suite -->
+		<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+		<!-- Script Section End -->
+	</body>
 </html>
 
 <!-- 
@@ -61,7 +99,7 @@
 //User Story #3: My portfolio should have a projects section with an id of projects.
 //User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
 //User Story #5: The projects section should contain at least one link to a project.
-User Story #6: My portfolio should have a navbar with an id of navbar.
+//User Story #6: My portfolio should have a navbar with an id of navbar.
 User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
 User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
 User Story #9: My portfolio should have at least one media query.
