@@ -1,12 +1,11 @@
 function openNav() {
-   document.getElementById("mySidenav").style.width = "45%";
+   document.getElementById("navbar").style.width = "250px";
    document.getElementById("hamburger").setAttribute('onClick', "closeNav()")
-   animateHamburger();
 }
 
 function closeNav() {
-   document.getElementById("mySidenav").style.width = "0";
-   document.getElementById("hamburger").setAttribute('onClick', "closeNav()")
+   document.getElementById("navbar").style.width = "0";
+   document.getElementById("hamburger").setAttribute('onClick', "openNav()")
 }
 
 function animateHamburger(){
