@@ -3,12 +3,69 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
    <link rel="stylesheet" href="css/scss/styles.css">
    <title>FCC Portfolio</title>
 </head>
 <body>
-   <h1>We're going to put a portfolio here soon</h1>
+   <!-- Nav Section Beginning -->
+   <nav id="navbar">
+      <a href="#welcome-section">About</a>
+      <a href="#skills">skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact-me">Contact</a>
+   </nav>
+   <!-- Nav Section End -->
+   <!-- Welcome Section Beginning -->
+   <section id='welcome-section'>
+         <h1>Robert Keller</h1>
+         <h2>I'm a Developer</h2>
+   </section>
+   <!-- Welcome Section End -->
+   <!-- Skills Section Beginning -->
+   <section id="skills">
+
+   </section>
+   <!-- Skills Section End -->
+   <!-- Projects Section Beginning -->
+   <section id="projects" class="container">
+      <div class="row">
+         <div class='card, project-tile'>
+            <img class="card-img-top" src="" alt="">
+            <div class="card-body">
+               <h5 class="card-title">Card Title</h5>
+               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+               <a class="btn-btn-primary" href="">Check This Project Out</a>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- Projects Section End -->
+   <!-- Contact Me Section Start -->
+   <section id="contact-me">
+      <a href="https://github.com/MisterRK">
+         <i class="fab fa-github-alt"></i>
+      </a>
+
+   </section>
+   <!-- Contact Me Section End -->
 
    <script src="index.js"></script>
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
+
+<!-- 
+//User Story #1: My portfolio should have a welcome section with an id of welcome-section.
+//User Story #2: The welcome section should have an h1 element that contains text.
+//User Story #3: My portfolio should have a projects section with an id of projects.
+//User Story #4: The projects section should contain at least one element with a class of project-tile to hold a project.
+//User Story #5: The projects section should contain at least one link to a project.
+User Story #6: My portfolio should have a navbar with an id of navbar.
+User Story #7: The navbar should contain at least one link that I can click on to navigate to different sections of the page.
+User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.
+User Story #9: My portfolio should have at least one media query.
+User Story #10: The height of the welcome section should be equal to the height of the viewport.
+User Story #11: The navbar should always be at the top of the viewport.
+
+ -->
