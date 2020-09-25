@@ -58,7 +58,7 @@
   height: 50px;
   cursor: pointer;
   margin-left: 2%;
-  background-color: #white;
+  background-color: white;
   border-radius: 10%;
 }
 
@@ -92,5 +92,6 @@
 
 #welcome-section {
   height: 100vh;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

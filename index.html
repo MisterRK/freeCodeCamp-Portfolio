@@ -31,10 +31,16 @@
 		<!-- Nav Section End -->
 		<!-- Welcome Section Beginning -->
 		<main id="main">
-			<section id="welcome-section">
-				<h1>Robert Keller</h1>
-				<h2>I'm a Developer</h2>
-			</section>
+			<div class=container id="welcome-section">
+				<div class="row h-100 align-items-center justify-content-center">
+					<h1 id="home-name">Robert <span>Keller</span> </h1>
+					<h2>I'm a 
+						<span style="width: 200px">
+							<b id="headline">Full Stack Developer</b>
+						</span>
+					</h2>
+				</div>
+			</div>
 			<!-- Welcome Section End -->
 			<!-- Skills Section Beginning -->
 			<section id="skills"></section>
@@ -60,7 +66,7 @@
 			<!-- Projects Section End -->
 			<!-- Contact Me Section Start -->
 			<section id="contact-me">
-				<a href="https://github.com/MisterRK"
+				<a id="profile-link" target="_blank" href="https://github.com/MisterRK"
                ><img
                   class="contact-logo"
 						src="./assets/images/GitHub-Mark-64px.png"
@@ -72,6 +78,7 @@
 			<!-- Contact Me Section End -->
 		</main>
 		<!-- Script Section Beginning -->
+		<!-- BootStrap CDN for JS Beginning -->
 		<script
 			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -87,9 +94,10 @@
 			integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 			crossorigin="anonymous"
 		></script>
+		<!-- BootStrap CDN for JS End -->
 		<script src="index.js"></script>
 		<!-- Runs the test suite -->
-		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
 		<!-- Script Section End
 	</body>
 </html>
