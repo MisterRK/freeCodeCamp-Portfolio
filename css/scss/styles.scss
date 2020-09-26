@@ -1,3 +1,26 @@
+body {
+	background-color: #181A1C;
+}
+
+#first-name, #headline, #headline-lead {
+	color: #f1f1f1;
+}
+
+@keyframes shrink {
+	from {width: 200px;}
+	to {width: 0px;}
+}
+
+#headline {
+	width: 200px;
+	animation: shrink 1s infinite
+}
+
+
+#last-name {
+	color: #7CB83F;
+}
+
 .sidenav {
 	height: 100%;
 	width: 0;
@@ -76,6 +99,12 @@
    height: 50px;
 }
 
+#headline-container {
+	padding-top: 50%;
+}
+#last-name {
+
+}
 #welcome-section {
 	height: 100vh;
 	text-align: center;
