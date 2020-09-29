@@ -6,6 +6,33 @@ body {
   color: #f1f1f1;
 }
 
+#blinking-cursor {
+  background-color: #f1f1f1;
+  width: 5px;
+  height: 50px;
+  display: inline-block;
+  -webkit-animation: blink .5s infinite;
+          animation: blink .5s infinite;
+}
+
+@-webkit-keyframes blink {
+  from {
+    background-color: #f1f1f1;
+  }
+  to {
+    background-color: #181A1C;
+  }
+}
+
+@keyframes blink {
+  from {
+    background-color: #f1f1f1;
+  }
+  to {
+    background-color: #181A1C;
+  }
+}
+
 @-webkit-keyframes shrink {
   from {
     width: 200px;
@@ -22,12 +49,6 @@ body {
   to {
     width: 0px;
   }
-}
-
-#headline {
-  width: 200px;
-  -webkit-animation: shrink 1s infinite;
-          animation: shrink 1s infinite;
 }
 
 #last-name {

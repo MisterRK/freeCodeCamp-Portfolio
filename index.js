@@ -14,7 +14,7 @@ function animateHamburger(){
 
 function animateHeadline() {
    let counter = 0;
-   let choices = ["I'm a Full Stack Developer", "I'm an Agile Developer", "I'm a Front End Developer"];
+   let choices = ["I'm a Full Stack Developer", "I'm an Agile Developer", "I'm a Front End Developer", "Let's work together!"];
    let animation = setInterval(() => {
       if(counter > 2) {
          counter = 0
@@ -28,13 +28,13 @@ function animateHeadline() {
          headline.innerHTML = ""
       }, 2500)
 
-   }, 2000);
+   }, 3000);
 }
 
 function adding(string){
-   console.log("📣")
+   // console.log("📣")
    let i = 0;
-   let speed = 40;
+   let speed = 50;
 
    function typeWriter(){
       if(i < string.length) {
@@ -60,6 +60,7 @@ function removing(string){
    }
    removeText()
 }
+
 
 
 // function removing(){
