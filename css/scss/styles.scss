@@ -110,6 +110,7 @@ body {
 
 #headline-container {
 	padding-top: 50%;
+	margin-left: 25%;
 }
 
 #welcome-section {
@@ -117,8 +118,25 @@ body {
 	text-align: center;
 }
 
+// fixing for larger screens
+
+
 @media (min-width:500px){
+
 	#headline-container{
 		padding-top: 33%;
 	}
+
+	#navbar {
+		width: 250px;
+	}
+
+	#main {
+		margin-left: 250px;
+	}
+
+	#closebtn {
+		visibility: hidden;
+	}
+
 }
