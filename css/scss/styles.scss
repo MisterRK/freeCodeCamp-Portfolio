@@ -117,6 +117,9 @@ body {
 	height: 100vh;
 	text-align: center;
 }
+.card-title, .card-text {
+	color: white;
+}
 
 // fixing for larger screens
 
@@ -133,6 +136,7 @@ body {
 
 	#main {
 		margin-left: 250px;
+		width: 100%;
 	}
 
 	#closebtn {

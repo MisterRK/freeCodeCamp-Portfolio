@@ -157,6 +157,10 @@ body {
   text-align: center;
 }
 
+.card-title, .card-text {
+  color: white;
+}
+
 @media (min-width: 500px) {
   #headline-container {
     padding-top: 33%;
@@ -166,6 +170,7 @@ body {
   }
   #main {
     margin-left: 250px;
+    width: 100%;
   }
   #closebtn {
     visibility: hidden;
