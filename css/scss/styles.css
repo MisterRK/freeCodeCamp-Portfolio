@@ -157,7 +157,7 @@ body {
   text-align: center;
 }
 
-.card-title, .card-text {
+.card-title, .card-text, .section-header, .section-text {
   color: white;
 }
 
