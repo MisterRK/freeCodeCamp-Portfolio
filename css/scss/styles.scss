@@ -136,6 +136,16 @@ body {
 	align-items: center;
 	text-align: center;
 }
+
+#projects {
+	display: flex;
+	width: 100%;
+	margin: auto;
+	align-items: center;
+	text-align: center;
+	justify-content: space-evenly;
+}
+
 .card-title,
 .card-text,
 .section-header,
@@ -159,8 +169,8 @@ body {
 .go-arrow {
 	margin-top: -4px;
 	margin-right: -4px;
-	color: white;
-	font-family: courier, sans;
+	color: black;
+	font-family: courier, sans-serif;
 }
 
 .go-corner {
@@ -173,7 +183,7 @@ body {
 	overflow: hidden;
 	top: 0;
 	right: 0;
-	background-color: #00838d;
+	background-color: #47CF73;
 	border-radius: 0 4px 0 32px;
 }
 
