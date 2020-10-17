@@ -1,5 +1,6 @@
 $background-color: #181a1c;
 
+
 body {
 	background-color: $background-color;
 }
@@ -9,6 +10,11 @@ body {
 #headline-lead {
 	color: #f1f1f1;
 }
+
+.nav-item{
+	color: #f1f1f1;
+}
+
 
 #blinking-cursor {
 	background-color: #f1f1f1;
@@ -74,10 +80,6 @@ body {
 	margin-left: 10%;
 }
 
-#main {
-	transition: margin-left 0.5s;
-	padding: 20px;
-}
 #hamburger {
 	display: flex;
 	flex-direction: column;
@@ -110,6 +112,7 @@ body {
 .change .bar2 {
 	opacity: 0;
 }
+
 .change .bar3 {
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-8px, -8px);
@@ -120,14 +123,6 @@ body {
 	height: 50px;
 }
 
-#headline-container {
-	padding-top: 50%;
-}
-
-#welcome-section {
-	height: 100vh;
-	text-align: center;
-}
 #about-me-section {
 	display: flex;
 	width: 100%;
@@ -190,6 +185,7 @@ body {
 // fixing for larger screens
 
 @media (min-width: 500px) {
+
 	#headline-container {
 		padding-top: 33%;
 	}
