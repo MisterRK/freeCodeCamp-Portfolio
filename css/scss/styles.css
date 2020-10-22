@@ -1,10 +1,19 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #181a1c;
 }
 
+hr {
+  width: 50%;
+  background-color: #f1f1f1;
+}
+
 #first-name,
 #headline,
-#headline-lead {
+#headline-lead, h3 {
   color: #f1f1f1;
 }
 
@@ -85,71 +94,12 @@ body {
   transition: 0.3s;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 10%;
-}
-
-#hamburger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  margin-left: 2%;
-  background-color: #181a1c;
-  border-radius: 10%;
-}
-
-.bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #f1f1f1;
-  margin: 4px;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.change .bar1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-  transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {
-  opacity: 0;
-}
-
-.change .bar3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px);
-  transform: rotate(45deg) translate(-8px, -8px);
-}
-
 .contact-logo {
   width: 50px;
   height: 50px;
 }
 
-#about-me-section {
+#welcome-section, #about-me-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -163,6 +113,20 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+}
+
+#welcome-section {
+  margin-top: 25vh;
+}
+
+#about-me-section {
+  padding-top: 15%;
+  margin-bottom: 10%;
+}
+
+#skills {
+  padding-top: 15%;
+  margin-top: 10%;
 }
 
 #projects {
@@ -187,17 +151,15 @@ body {
   color: white;
 }
 
+.card-img-top, .card {
+  max-width: 100px;
+  margin-top: 8%;
+}
+
 .project-tile {
-  display: block;
-  position: relative;
-  max-width: 262px;
-  background-color: #323255;
-  border-radius: 4px;
-  padding: 32px 24px;
-  margin: 12px;
-  text-decoration: none;
-  z-index: 0;
-  overflow: hidden;
+  background-color: #2D303E;
+  height: 175px;
+  margin-top: 4rem;
 }
 
 .go-arrow {
@@ -228,9 +190,6 @@ body {
 }
 
 @media (min-width: 500px) {
-  #headline-container {
-    padding-top: 33%;
-  }
   #navbar {
     width: 250px;
   }
