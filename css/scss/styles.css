@@ -70,30 +70,6 @@ hr {
   color: #7cb83f;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  padding-top: 60px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
 .contact-logo {
   width: 50px;
   height: 50px;
@@ -190,9 +166,6 @@ hr {
 }
 
 @media (min-width: 500px) {
-  #navbar {
-    width: 250px;
-  }
   #main {
     margin-left: 250px;
     width: 100%;
